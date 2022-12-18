@@ -10,7 +10,6 @@ const quickSort = (arr) => {
 			if (i === pivotIndex) continue;
 			arr[i] < pivot ? left.push(arr[i]) : right.push(arr[i]);
 		}
-
 		return [...quickSort(left), pivot, ...quickSort(right)]
 	}
 	return arr;
